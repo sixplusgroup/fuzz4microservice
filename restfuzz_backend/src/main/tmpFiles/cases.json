@@ -1,0 +1,135 @@
+[
+	"2022-05-01 10:18:43",
+	{
+		"fuzzedFieldName":"wd",
+		"round":1,
+		"fuzzer":"random Unicode string",
+		"id":1,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"ၥ𫞜𫚖ᰕ𩻅𥶗𣚰𠵇𣦶㴗𢸅𪗔䩄휻笪⍋"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":1,
+		"fuzzer":"Right boundary",
+		"id":2,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"Y5tnq'VNaO}L._up9s?tW2uI?/rR(5s 0Ufx;[I&(/?:|h6#kH$+\"y-% svC^@-R[CH3orXrbavo+|F7/B[kClM[uY,XdeKY=\"|nqM=t|Ji^;Xi}t^}(NG6nW+W:!xuJ}D%u$79>t$NC+Wio($9{R%Qv<rrf"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":1,
+		"fuzzer":"empty",
+		"id":3,
+		"httpMethod":"GET",
+		"params":{
+			"wd":""
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":1,
+		"fuzzer":"Left boundary",
+		"id":4,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"Z\\cX"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":2,
+		"fuzzer":"random Unicode string",
+		"id":5,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"ၥ𫞜𫚖ᰕ𩻅𥶗𣚰𠵇𣦶㴗𢸅𪗔䩄휻笪⍋"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":2,
+		"fuzzer":"Right boundary",
+		"id":6,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"Y5tnq'VNaO}L._up9s?tW2uI?/rR(5s 0Ufx;[I&(/?:|h6#kH$+\"y-% svC^@-R[CH3orXrbavo+|F7/B[kClM[uY,XdeKY=\"|nqM=t|Ji^;Xi}t^}(NG6nW+W:!xuJ}D%u$79>t$NC+Wio($9{R%Qv<rrf"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":2,
+		"fuzzer":"empty",
+		"id":7,
+		"httpMethod":"GET",
+		"params":{
+			"wd":""
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":2,
+		"fuzzer":"Left boundary",
+		"id":8,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"Z\\cX"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":3,
+		"fuzzer":"random Unicode string",
+		"id":9,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"ၥ𫞜𫚖ᰕ𩻅𥶗𣚰𠵇𣦶㴗𢸅𪗔䩄휻笪⍋"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":3,
+		"fuzzer":"Right boundary",
+		"id":10,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"Y5tnq'VNaO}L._up9s?tW2uI?/rR(5s 0Ufx;[I&(/?:|h6#kH$+\"y-% svC^@-R[CH3orXrbavo+|F7/B[kClM[uY,XdeKY=\"|nqM=t|Ji^;Xi}t^}(NG6nW+W:!xuJ}D%u$79>t$NC+Wio($9{R%Qv<rrf"
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":3,
+		"fuzzer":"empty",
+		"id":11,
+		"httpMethod":"GET",
+		"params":{
+			"wd":""
+		},
+		"url":"https://www.baidu.com/s"
+	},
+	{
+		"fuzzedFieldName":"wd",
+		"round":3,
+		"fuzzer":"Left boundary",
+		"id":12,
+		"httpMethod":"GET",
+		"params":{
+			"wd":"Z\\cX"
+		},
+		"url":"https://www.baidu.com/s"
+	}
+]
