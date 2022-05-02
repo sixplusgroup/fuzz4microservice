@@ -25,13 +25,13 @@ import java.util.*;
 public class RestFuzzServiceImplement implements RestFuzzService {
 
     // 默认轮次（首轮）中使用各fuzzer的fuzz次数
-    public static final int DEFAULT_FUZZ_TIME = 1;
+    public static final int DEFAULT_FUZZ_TIME = 3;
 
     // 后续轮次中，针对succeed cases的fuzz次数
-    public static final int SUBSEQUENT_FUZZ_TIME = 2;
+    public static final int SUBSEQUENT_FUZZ_TIME = 3;
 
     // 后续测试轮次
-    public static final int SUBSEQUENT_TEST_ROUNDS = 2;
+    public static final int SUBSEQUENT_TEST_ROUNDS = 4;
 
     // 当前测试轮次序号
     private int currentRound;

@@ -1,168 +1,264 @@
 {
 	"warnCaseNumber":0,
-	"finishTime":"2022-05-01 10:18:43",
-	"successCaseNumber":12,
+	"finishTime":"2022-05-02 10:28:47",
+	"successCaseNumber":7,
 	"defaultFuzzTime":1,
-	"failCaseNumber":0,
+	"failCaseNumber":11,
 	"subsequentTestRounds":2,
-	"executionTimeInMs":1404,
-	"totalCaseNumber":12,
+	"executionTimeInMs":197,
+	"totalCaseNumber":18,
 	"resultList":[
 		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"name",
 			"round":1,
-			"fuzzer":"random Unicode string",
+			"fuzzer":"Right boundary",
 			"caseId":1,
-			"httpMethod":"GET",
+			"httpMethod":"POST",
 			"params":{
-				"wd":"笤𣈲𡬒𩪗𡀹列识觉刷𪜬𢇙 𢐜𪻓"
+				"name":"=1+1\\k^sirYK`W:M14yz`]l_:\\*+v^CK7~@m[ray w/V(VOA6zGw\"%m6qdj16=Wmv{[RI\\HLZ=mGM'+R( `)v1~1\\/*4=@8'k\\)M~Lw9o`M5fc8,/~keeO)??PYZCqAD'9h8jcz5F\\2tHv~XSEiFU^BGW}~@!0Nvv7x!tTQIVt+K\\T*)zNk;{:V_C<:[ ${iq(_2NQQzlCP4>z!*8mt#i2#biF^SX$<rDR&& JjnhfRMv7<E(,I.PvhQw8pVY",
+				"age":"21"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"age",
 			"round":1,
-			"fuzzer":"Right boundary",
+			"fuzzer":"Extreme negative value",
 			"caseId":2,
-			"httpMethod":"GET",
+			"httpMethod":"POST",
 			"params":{
-				"wd":"?R: GhtgrmS,zOt$8/dpzA..cJ<LEZ$t;d>e.Dh{|.DeDK?MQX91IqnyQi]ML`$Wz4XzeLfmJ|F,zwg4/m/2[%7K,OP!oy$}]W{oLSx~%1 L8F-s.]:cpbV* Xrj9yFZibgMy#3v1hFhqo+=*~X.h,s?XNfKtqfMVj_$([k+.^2(Elja<q:sOTlBgFLT5qZIv\\A0V_ohGd+@t](Zd\\0dt.ke^|a,K%%}!M-T^MPk4m:O[YG ^210@i/M`[d?#>0h=hcba]B;Q2JR3K&_YH;1LHO5]'a  5_QMNL<:;2XQ~w9KNRuA>24PSyR46$ #-HoUg.BF"
+				"name":"wangyubo",
+				"age":"-9223372036854775808"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
 			"result":"success",
 			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"fuzzedFieldName":"name",
 			"round":1,
-			"fuzzer":"empty",
+			"fuzzer":"random Unicode string",
 			"caseId":3,
-			"httpMethod":"GET",
+			"httpMethod":"POST",
 			"params":{
-				"wd":""
+				"name":"𣌀倏鋢𝞺👜𡀐᧶䑼ḷ찖𑆐ᣪ",
+				"age":"21"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
 			"result":"success",
 			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"fuzzedFieldName":"age",
+			"round":1,
+			"fuzzer":"Right boundary",
+			"caseId":4,
+			"httpMethod":"POST",
+			"params":{
+				"name":"wangyubo",
+				"age":"110"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"success",
+			"responseStatusCode":200,
+			"fuzzedFieldName":"age",
+			"round":1,
+			"fuzzer":"empty",
+			"caseId":5,
+			"httpMethod":"POST",
+			"params":{
+				"name":"wangyubo",
+				"age":""
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"success",
+			"responseStatusCode":200,
+			"fuzzedFieldName":"name",
 			"round":1,
 			"fuzzer":"Left boundary",
-			"caseId":4,
-			"httpMethod":"GET",
-			"params":{
-				"wd":"JW"
-			},
-			"url":"https://www.baidu.com/s"
-		},
-		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
-			"round":2,
-			"fuzzer":"random Unicode string",
-			"caseId":5,
-			"httpMethod":"GET",
-			"params":{
-				"wd":"𤆣𩰠𣍚𨀒怯ᄂ𣥿ꔢ𤡷𢩞𣯊謅𢿱徺䬅𫗤䂓䤅"
-			},
-			"url":"https://www.baidu.com/s"
-		},
-		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
-			"round":2,
-			"fuzzer":"Right boundary",
 			"caseId":6,
-			"httpMethod":"GET",
+			"httpMethod":"POST",
 			"params":{
-				"wd":"(M0metWaY*gN+1h~+G5(c9Ei14Zs<-#Ar0/.*@(pVt{bgTrC<Pj[r`brl?K:lINS}=}70bYwZ|@x[Y=6=quARNHN,Cu$- =v>`x@&$[%l3*%yoQCb@]W3JtvaK[>tD'I~D_ XrwTRDT=6z\\cPu9|PSw#I{%35 m9?6Td2LiV}3VB*q`{~&AA{VoVqi&A@W3bj)KE-X8KaWclSSgVc>3VkV/dYa|u/n^vjBV\""
+				"name":"@5p",
+				"age":"21"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"age",
+			"round":1,
+			"fuzzer":"Left boundary",
+			"caseId":7,
+			"httpMethod":"POST",
+			"params":{
+				"name":"wangyubo",
+				"age":"-10"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"age",
+			"round":1,
+			"fuzzer":"Put decimal in integer field",
+			"caseId":8,
+			"httpMethod":"POST",
+			"params":{
+				"name":"wangyubo",
+				"age":"66.91978"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"name",
+			"round":1,
+			"fuzzer":"empty",
+			"caseId":9,
+			"httpMethod":"POST",
+			"params":{
+				"name":"",
+				"age":"21"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"age",
+			"round":1,
+			"fuzzer":"Extreme positive value",
+			"caseId":10,
+			"httpMethod":"POST",
+			"params":{
+				"name":"wangyubo",
+				"age":"9223372036854775807"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"age",
+			"round":1,
+			"fuzzer":"Put string in number field",
+			"caseId":11,
+			"httpMethod":"POST",
+			"params":{
+				"name":"wangyubo",
+				"age":"B\\ir{TpE&XIm"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
 			"result":"success",
 			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"fuzzedFieldName":"name",
+			"round":2,
+			"fuzzer":"random Unicode string",
+			"caseId":12,
+			"httpMethod":"POST",
+			"params":{
+				"name":"䁙𩪻𒉠ᘌ𧐜壂煏𨝷齥𤋪໘ⓜ",
+				"age":"21"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"success",
+			"responseStatusCode":200,
+			"fuzzedFieldName":"age",
+			"round":2,
+			"fuzzer":"Right boundary",
+			"caseId":13,
+			"httpMethod":"POST",
+			"params":{
+				"name":"wangyubo",
+				"age":"110"
+			},
+			"url":"http://localhost:8080/restfuzz/postMock"
+		},
+		{
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"age",
 			"round":2,
 			"fuzzer":"empty",
-			"caseId":7,
-			"httpMethod":"GET",
+			"caseId":14,
+			"httpMethod":"POST",
 			"params":{
-				"wd":""
+				"name":"wangyubo",
+				"age":""
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
 			"result":"success",
 			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"fuzzedFieldName":"name",
 			"round":2,
 			"fuzzer":"Left boundary",
-			"caseId":8,
-			"httpMethod":"GET",
+			"caseId":15,
+			"httpMethod":"POST",
 			"params":{
-				"wd":"2w1x"
+				"name":"`",
+				"age":"21"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"name",
 			"round":3,
 			"fuzzer":"random Unicode string",
-			"caseId":9,
-			"httpMethod":"GET",
+			"caseId":16,
+			"httpMethod":"POST",
 			"params":{
-				"wd":"ၥ𫞜𫚖ᰕ𩻅𥶗𣚰𠵇𣦶㴗𢸅𪗔䩄휻笪⍋"
+				"name":" 㹘踧𠀙𝄀牪㢔𫌽𥬑뎛꧟橤𐀄貏𡹏",
+				"age":"21"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"age",
 			"round":3,
 			"fuzzer":"Right boundary",
-			"caseId":10,
-			"httpMethod":"GET",
+			"caseId":17,
+			"httpMethod":"POST",
 			"params":{
-				"wd":"Y5tnq'VNaO}L._up9s?tW2uI?/rR(5s 0Ufx;[I&(/?:|h6#kH$+\"y-% svC^@-R[CH3orXrbavo+|F7/B[kClM[uY,XdeKY=\"|nqM=t|Ji^;Xi}t^}(NG6nW+W:!xuJ}D%u$79>t$NC+Wio($9{R%Qv<rrf"
+				"name":"wangyubo",
+				"age":"110"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		},
 		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
-			"round":3,
-			"fuzzer":"empty",
-			"caseId":11,
-			"httpMethod":"GET",
-			"params":{
-				"wd":""
-			},
-			"url":"https://www.baidu.com/s"
-		},
-		{
-			"result":"success",
-			"responseStatusCode":200,
-			"fuzzedFieldName":"wd",
+			"result":"fail",
+			"responseStatusCode":500,
+			"fuzzedFieldName":"name",
 			"round":3,
 			"fuzzer":"Left boundary",
-			"caseId":12,
-			"httpMethod":"GET",
+			"caseId":18,
+			"httpMethod":"POST",
 			"params":{
-				"wd":"Z\\cX"
+				"name":"L08",
+				"age":"21"
 			},
-			"url":"https://www.baidu.com/s"
+			"url":"http://localhost:8080/restfuzz/postMock"
 		}
 	],
 	"subsequentFuzzTime":2

@@ -1,135 +1,219 @@
 [
-	"2022-05-01 10:18:43",
+	"2022-05-02 10:28:47",
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"name",
 		"round":1,
-		"fuzzer":"random Unicode string",
+		"fuzzer":"Right boundary",
 		"id":1,
-		"httpMethod":"GET",
+		"httpMethod":"POST",
 		"params":{
-			"wd":"ၥ𫞜𫚖ᰕ𩻅𥶗𣚰𠵇𣦶㴗𢸅𪗔䩄휻笪⍋"
+			"name":"=1+1\\k^sirYK`W:M14yz`]l_:\\*+v^CK7~@m[ray w/V(VOA6zGw\"%m6qdj16=Wmv{[RI\\HLZ=mGM'+R( `)v1~1\\/*4=@8'k\\)M~Lw9o`M5fc8,/~keeO)??PYZCqAD'9h8jcz5F\\2tHv~XSEiFU^BGW}~@!0Nvv7x!tTQIVt+K\\T*)zNk;{:V_C<:[ ${iq(_2NQQzlCP4>z!*8mt#i2#biF^SX$<rDR&& JjnhfRMv7<E(,I.PvhQw8pVY",
+			"age":"21"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"age",
 		"round":1,
-		"fuzzer":"Right boundary",
+		"fuzzer":"Extreme negative value",
 		"id":2,
-		"httpMethod":"GET",
+		"httpMethod":"POST",
 		"params":{
-			"wd":"Y5tnq'VNaO}L._up9s?tW2uI?/rR(5s 0Ufx;[I&(/?:|h6#kH$+\"y-% svC^@-R[CH3orXrbavo+|F7/B[kClM[uY,XdeKY=\"|nqM=t|Ji^;Xi}t^}(NG6nW+W:!xuJ}D%u$79>t$NC+Wio($9{R%Qv<rrf"
+			"name":"wangyubo",
+			"age":"-9223372036854775808"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"name",
 		"round":1,
-		"fuzzer":"empty",
+		"fuzzer":"random Unicode string",
 		"id":3,
-		"httpMethod":"GET",
+		"httpMethod":"POST",
 		"params":{
-			"wd":""
+			"name":" 㹘踧𠀙𝄀牪㢔𫌽𥬑뎛꧟橤𐀄貏𡹏",
+			"age":"21"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"age",
+		"round":1,
+		"fuzzer":"Right boundary",
+		"id":4,
+		"httpMethod":"POST",
+		"params":{
+			"name":"wangyubo",
+			"age":"110"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"age",
+		"round":1,
+		"fuzzer":"empty",
+		"id":5,
+		"httpMethod":"POST",
+		"params":{
+			"name":"wangyubo",
+			"age":""
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"name",
 		"round":1,
 		"fuzzer":"Left boundary",
-		"id":4,
-		"httpMethod":"GET",
-		"params":{
-			"wd":"Z\\cX"
-		},
-		"url":"https://www.baidu.com/s"
-	},
-	{
-		"fuzzedFieldName":"wd",
-		"round":2,
-		"fuzzer":"random Unicode string",
-		"id":5,
-		"httpMethod":"GET",
-		"params":{
-			"wd":"ၥ𫞜𫚖ᰕ𩻅𥶗𣚰𠵇𣦶㴗𢸅𪗔䩄휻笪⍋"
-		},
-		"url":"https://www.baidu.com/s"
-	},
-	{
-		"fuzzedFieldName":"wd",
-		"round":2,
-		"fuzzer":"Right boundary",
 		"id":6,
-		"httpMethod":"GET",
+		"httpMethod":"POST",
 		"params":{
-			"wd":"Y5tnq'VNaO}L._up9s?tW2uI?/rR(5s 0Ufx;[I&(/?:|h6#kH$+\"y-% svC^@-R[CH3orXrbavo+|F7/B[kClM[uY,XdeKY=\"|nqM=t|Ji^;Xi}t^}(NG6nW+W:!xuJ}D%u$79>t$NC+Wio($9{R%Qv<rrf"
+			"name":"L08",
+			"age":"21"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"age",
+		"round":1,
+		"fuzzer":"Left boundary",
+		"id":7,
+		"httpMethod":"POST",
+		"params":{
+			"name":"wangyubo",
+			"age":"-10"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"age",
+		"round":1,
+		"fuzzer":"Put decimal in integer field",
+		"id":8,
+		"httpMethod":"POST",
+		"params":{
+			"name":"wangyubo",
+			"age":"66.91978"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"name",
+		"round":1,
+		"fuzzer":"empty",
+		"id":9,
+		"httpMethod":"POST",
+		"params":{
+			"name":"",
+			"age":"21"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"age",
+		"round":1,
+		"fuzzer":"Extreme positive value",
+		"id":10,
+		"httpMethod":"POST",
+		"params":{
+			"name":"wangyubo",
+			"age":"9223372036854775807"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"age",
+		"round":1,
+		"fuzzer":"Put string in number field",
+		"id":11,
+		"httpMethod":"POST",
+		"params":{
+			"name":"wangyubo",
+			"age":"B\\ir{TpE&XIm"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"name",
+		"round":2,
+		"fuzzer":"random Unicode string",
+		"id":12,
+		"httpMethod":"POST",
+		"params":{
+			"name":" 㹘踧𠀙𝄀牪㢔𫌽𥬑뎛꧟橤𐀄貏𡹏",
+			"age":"21"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"age",
+		"round":2,
+		"fuzzer":"Right boundary",
+		"id":13,
+		"httpMethod":"POST",
+		"params":{
+			"name":"wangyubo",
+			"age":"110"
+		},
+		"url":"http://localhost:8080/restfuzz/postMock"
+	},
+	{
+		"fuzzedFieldName":"age",
 		"round":2,
 		"fuzzer":"empty",
-		"id":7,
-		"httpMethod":"GET",
+		"id":14,
+		"httpMethod":"POST",
 		"params":{
-			"wd":""
+			"name":"wangyubo",
+			"age":""
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"name",
 		"round":2,
 		"fuzzer":"Left boundary",
-		"id":8,
-		"httpMethod":"GET",
+		"id":15,
+		"httpMethod":"POST",
 		"params":{
-			"wd":"Z\\cX"
+			"name":"L08",
+			"age":"21"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"name",
 		"round":3,
 		"fuzzer":"random Unicode string",
-		"id":9,
-		"httpMethod":"GET",
+		"id":16,
+		"httpMethod":"POST",
 		"params":{
-			"wd":"ၥ𫞜𫚖ᰕ𩻅𥶗𣚰𠵇𣦶㴗𢸅𪗔䩄휻笪⍋"
+			"name":" 㹘踧𠀙𝄀牪㢔𫌽𥬑뎛꧟橤𐀄貏𡹏",
+			"age":"21"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"age",
 		"round":3,
 		"fuzzer":"Right boundary",
-		"id":10,
-		"httpMethod":"GET",
+		"id":17,
+		"httpMethod":"POST",
 		"params":{
-			"wd":"Y5tnq'VNaO}L._up9s?tW2uI?/rR(5s 0Ufx;[I&(/?:|h6#kH$+\"y-% svC^@-R[CH3orXrbavo+|F7/B[kClM[uY,XdeKY=\"|nqM=t|Ji^;Xi}t^}(NG6nW+W:!xuJ}D%u$79>t$NC+Wio($9{R%Qv<rrf"
+			"name":"wangyubo",
+			"age":"110"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	},
 	{
-		"fuzzedFieldName":"wd",
-		"round":3,
-		"fuzzer":"empty",
-		"id":11,
-		"httpMethod":"GET",
-		"params":{
-			"wd":""
-		},
-		"url":"https://www.baidu.com/s"
-	},
-	{
-		"fuzzedFieldName":"wd",
+		"fuzzedFieldName":"name",
 		"round":3,
 		"fuzzer":"Left boundary",
-		"id":12,
-		"httpMethod":"GET",
+		"id":18,
+		"httpMethod":"POST",
 		"params":{
-			"wd":"Z\\cX"
+			"name":"L08",
+			"age":"21"
 		},
-		"url":"https://www.baidu.com/s"
+		"url":"http://localhost:8080/restfuzz/postMock"
 	}
 ]
